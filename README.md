@@ -132,6 +132,7 @@ Cameras:
 
 ```
 -- Run
+DetectModel			-> 填写onnx路径 如果无同名称".ebin"后缀模型 会自动进行转换 日志会打印[Detector Convert Model]及[Detector Convert Model done]信息
 Vertical_Fov			-> 相机竖直方向FOV (按照实际相机参数给出)
 Channel_Directions		-> 仅支持 "front" "left" "right" "back" "bottom" 的任意组合 方向可以任意顺序给出 但是ImageTopic{N}会按照给出的方向顺序读取topic Calibration_File_{}会根据方向读取 不受影响
 MaxPitch/MaxRoll		-> 如果dji_state给出的Pitch/Roll大于该值 则不会返回任何结果 检测结果会返回空图
