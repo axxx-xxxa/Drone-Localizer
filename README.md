@@ -25,6 +25,7 @@
 3. catkin_make
 4. source devel/setup.bash
 ```
+注意 zip包代码在x86平台编译 如果在ORIN编译 需要修改src/drone_localizer/CMakeLists.txt 搜索 "# modify x86" 将下两行的注释互换 (对应的依赖改为ORIN对应的路径)
 
 ## Files
 
