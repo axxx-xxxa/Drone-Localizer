@@ -62,14 +62,21 @@ install 						-
 ```
 
 ## Quick Start
+1. Modify File Path in drone_localizer.yaml
+```bash
+Calibration_File_{} 	x N
+ImageTopic 		x N
+CameraConfig
+DetectModel
+```
 
-1. Terminal1
+3. Terminal1
 
 ```bash
 rosbag play -l ~/2024-09-19-12-53-38.bag
 ```
 
-2. Teriminal2
+3. Teriminal2
 
 ```   
 roslaunch launch/drone_localizer.launch
@@ -77,7 +84,7 @@ roslaunch launch/drone_localizer.launch
 
 使用默认配置测试程序能否正常运行 
 
-3. Visualize(rviz)
+4. Visualize(rviz)
 
 ```
 rviz-> File-> Open Config-> ~/config/drone_deploy.rviz
