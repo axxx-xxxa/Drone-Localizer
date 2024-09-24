@@ -83,7 +83,32 @@ rosbag play -l ~/2024-09-19-12-53-38.bag
 roslaunch launch/drone_localizer.launch
 ```
 
-使用默认配置测试程序能否正常运行 
+使用默认配置测试程序能否正常运行 正常运行打印日志如下
+```
+I0924 11:02:09.353560 920298 drone_localizer_ros.cpp:236] [CameraConfig] front Cam_HAngle2Front: 0 Cam_VAngle2Horizon: 45 Horizontal_Scale: 1 Vertical_Scale: 1 undistort: 1 flip: 0
+I0924 11:02:09.355885 920298 drone_localizer_ros.cpp:236] [CameraConfig] left Cam_HAngle2Front: 90 Cam_VAngle2Horizon: 45 Horizontal_Scale: 1 Vertical_Scale: 1 undistort: 1 flip: 1
+I0924 11:02:09.357946 920298 drone_localizer_ros.cpp:236] [CameraConfig] right Cam_HAngle2Front: -90 Cam_VAngle2Horizon: 45 Horizontal_Scale: 1 Vertical_Scale: 1 undistort: 1 flip: 1
+I0924 11:02:09.359985 920298 drone_localizer_ros.cpp:236] [CameraConfig] back Cam_HAngle2Front: 180 Cam_VAngle2Horizon: 45 Horizontal_Scale: 1 Vertical_Scale: 1 undistort: 1 flip: 1
+I0924 11:02:09.362033 920298 drone_localizer_ros.cpp:236] [CameraConfig] bottom Cam_HAngle2Front: -90 Cam_VAngle2Horizon: 90 Horizontal_Scale: 2 Vertical_Scale: 0.7 undistort: 1 flip: 0
+I0924 11:02:09.362044 920298 drone_localizer_ros.cpp:25] [ROS NODE LOG] DroneLocalizerRos init done
+I0924 11:02:09.372550 920298 drone_localizer_ros.cpp:63] [Run] Sub and Pub Channels init done
+I0924 11:02:09.373896 920298 drone_localizer.cpp:144] [Localizer Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/config/camera1.yaml
+I0924 11:02:09.812831 920298 drone_detector.hpp:109] [Detector Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/model/drone0709_x86.ebin
+I0924 11:02:09.812975 920298 drone_localizer.cpp:144] [Localizer Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/config/camera3.yaml
+I0924 11:02:10.179229 920298 drone_detector.hpp:109] [Detector Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/model/drone0709_x86.ebin
+I0924 11:02:10.179373 920298 drone_localizer.cpp:144] [Localizer Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/config/camera0.yaml
+I0924 11:02:10.549350 920298 drone_detector.hpp:109] [Detector Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/model/drone0709_x86.ebin
+I0924 11:02:10.549500 920298 drone_localizer.cpp:144] [Localizer Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/config/camera4.yaml
+I0924 11:02:10.920450 920298 drone_detector.hpp:109] [Detector Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/model/drone0709_x86.ebin
+I0924 11:02:10.920595 920298 drone_localizer.cpp:144] [Localizer Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/config/camera2.yaml
+I0924 11:02:11.288950 920298 drone_detector.hpp:109] [Detector Init done] /media/steven/projects/Drone/deploy/drone-project-202409/v1.4/model/drone0709_x86.ebin
+I0924 11:02:11.389549 920313 drone_localizer_ros.cpp:257] [Infer_From_Real] Start !
+I0924 11:02:11.489663 920314 drone_localizer_ros.cpp:257] [Infer_From_Real] Start !
+I0924 11:02:11.589886 920315 drone_localizer_ros.cpp:257] [Infer_From_Real] Start !
+I0924 11:02:11.690358 920316 drone_localizer_ros.cpp:257] [Infer_From_Real] Start !
+I0924 11:02:11.790421 920298 drone_localizer_ros.cpp:82] [Run] Det and Loc Channels init done
+I0924 11:02:11.790469 920317 drone_localizer_ros.cpp:257] [Infer_From_Real] Start !
+```
 
 4. Visualize(rviz)
 
