@@ -62,7 +62,7 @@ devel 							-
 install 						-
 ```
 
-## Quick Start
+## Quick Start （using 2024-09-19-12-53-38.bag）
 1. Modify File Path in drone_localizer.yaml
 ```bash
 Calibration_File_{} 	x N
