@@ -181,10 +181,10 @@ LogLevel: 0               # GLOG日志等级 默认0即可
 GlogSavePath: ""	  # 如果不为空 glog日志会保存到该文件 默认大小100MB
 ```
 
-## Static{} = true  StaticHeight/StaticRotate/StaticPoint/StaticRollPitch = true 高度默认为100
+## StaticHeight/StaticRotate/StaticPoint/StaticRollPitch = true 高度默认为100
 ![drone_static_all](https://github.com/user-attachments/assets/d4064ba1-ffaa-4575-9095-cb2f39c42693)
 
-## StaticHeight = false 该bag高度变化不明显 可以和Static{} = true对比不同高度带来的变化
+## StaticHeight = false 该bag高度变化不明显 可以和上图对比不同高度带来的变化
 ![drone_dynamic_height](https://github.com/user-attachments/assets/c53af765-e259-41f7-9215-bcde955e0b65)
 
 ## StaticRollPitch = false 
