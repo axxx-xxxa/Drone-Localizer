@@ -5,16 +5,16 @@
 1. input topic
 
 ```
-1. djistate_msgs::state ( x 1)				-> dji_state
-2. sensor_msgs::ImageConstPtr ( x CameraNum)		-> 图像输入
+1. djistate_msgs::state 				-> dji_state		( x 1)
+2. sensor_msgs::ImageConstPtr 				-> 图像输入    		( x CameraNum)
 ```
 
 2. output topic
 
 ```
-1./{direction}/point_cloud				-> 点云输出
-2./{direction}/xperception_msgs				-> msg输出
-3./{direction}/detect					-> 2D检测结果输出
+1./{direction}/point_cloud				-> 点云输出		( x CameraNum)
+2./{direction}/xperception_msgs				-> msg输出		( x CameraNum)
+3./{direction}/detect					-> 2D检测结果输出	( x CameraNum)
 ```
 
 ## Installation
